@@ -15,6 +15,7 @@
 #include "funzioni_cartella.h"
 #include "funzioni_file.h"
 #include "funzioni_inotify.h"
+#include "logo.h"
 
 // Definizione costanti
 #define MAX_PATH_LENGTH 256
@@ -62,6 +63,8 @@ int main() {
     }
 
     printf(GREEN "Programma avviato nella cartella: %s\n" RESET, initial_path);
+
+    stampa_ascii_art();
 
     // Loop principale del menu
     do {

@@ -1,0 +1,1 @@
+void stampa_ascii_art();
