@@ -1,7 +1,7 @@
 all: main
 
-clean: main main.o funzioni_cartella_file.o funzioni_cartella.o funzioni_file.o funzioni_inotify.o 
-		rm -rf main main.o funzioni_cartella_file.o funzioni_cartella.o funzioni_file.o funzioni_inotify.o 
+clean: main main.o funzioni_cartella_file.o funzioni_cartella.o funzioni_file.o funzioni_inotify.o logo.o
+		rm -rf main main.o funzioni_cartella_file.o funzioni_cartella.o funzioni_file.o funzioni_inotify.o logo.o 
 
 main: main.o funzioni_cartella_file.o funzioni_cartella.o funzioni_file.o funzioni_inotify.o logo.o
 		gcc -o main main.o funzioni_cartella_file.o funzioni_cartella.o funzioni_file.o funzioni_inotify.o logo.o
